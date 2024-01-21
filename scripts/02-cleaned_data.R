@@ -9,7 +9,6 @@ toronto_shelters_clean <-
   mutate(occupancy_date = ymd(occupancy_date)) |> 
   select(occupancy_date, occupied_beds)
 
-
 write_csv(
   x = toronto_shelters_clean,
   file = "cleaned_data.csv"

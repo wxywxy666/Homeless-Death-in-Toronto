@@ -19,8 +19,3 @@ library(opendatatoronto)
 library(tidyverse)
 
 ```
-
-```{r}
-
-```
-

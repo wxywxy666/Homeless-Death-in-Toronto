@@ -16,6 +16,7 @@ toronto_shelters <-
   # Having reduced the dataset to one row we can get the resource
   get_resource()
 
+
 write_csv(
   x = toronto_shelters,
   file = "unedited_data.csv"
