@@ -30,4 +30,5 @@ simulated_occupancy_data <-
 
 head(simulated_occupancy_data)
 
+citation('janitor')
 citation()

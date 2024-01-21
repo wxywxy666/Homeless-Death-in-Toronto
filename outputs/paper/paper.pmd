@@ -1,0 +1,26 @@
+---
+title: ""
+author: 
+  - Xiyou Wang
+thanks: "Code and data are available at: "
+date: "`r format(Sys.time(), '%d %B %Y')`"
+abstract: ""
+output:
+  bookdown::pdf_document2
+toc: TRUE
+bibliography: references.bib
+---
+
+```{r}
+library(knitr)
+library(janitor)
+library(lubridate)
+library(opendatatoronto)
+library(tidyverse)
+
+```
+
+```{r}
+
+```
+

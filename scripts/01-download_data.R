@@ -3,6 +3,7 @@ library(janitor)
 library(lubridate)
 library(opendatatoronto)
 library(tidyverse)
+
 #### Acquire ####
 toronto_shelters <-
   # Each package is associated with a unique id  found in the "For 
