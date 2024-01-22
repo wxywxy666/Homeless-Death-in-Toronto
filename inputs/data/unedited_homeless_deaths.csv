@@ -1,0 +1,254 @@
+X_id,Year.of.death,Cause_of_death,Age_group,Gender,Count
+1,2017,Accident,40-59,Male,2
+2,2017,Accident,60+,Male,3
+3,2017,Cancer,60+,Female,1
+4,2017,Cancer,40-59,Female,2
+5,2017,Cancer,40-59,Male,2
+6,2017,Cancer,60+,Male,4
+7,2017,Cardiovascular Disease,60+,Female,2
+8,2017,Cardiovascular Disease,Unknown,Male,1
+9,2017,Cardiovascular Disease,20-39,Male,2
+10,2017,Cardiovascular Disease,40-59,Male,4
+11,2017,Cardiovascular Disease,60+,Male,5
+12,2017,Drug Toxicity,40-59,Female,2
+13,2017,Drug Toxicity,20-39,Female,3
+14,2017,Drug Toxicity,Unknown,Male,1
+15,2017,Drug Toxicity,60+,Male,3
+16,2017,Drug Toxicity,20-39,Male,10
+17,2017,Drug Toxicity,40-59,Male,13
+18,2017,Homicide,40-59,Male,1
+19,2017,Other,20-39,Female,1
+20,2017,Other,60+,Female,1
+21,2017,Other,40-59,Female,2
+22,2017,Other,20-39,Male,2
+23,2017,Other,40-59,Male,2
+24,2017,Pneumonia,40-59,Male,3
+25,2017,Suicide,20-39,Female,1
+26,2017,Suicide,40-59,Female,2
+27,2017,Unknown/Pending,20-39,Female,1
+28,2017,Unknown/Pending,Unknown,Female,1
+29,2017,Unknown/Pending,60+,Female,2
+30,2017,Unknown/Pending,40-59,Female,4
+31,2017,Unknown/Pending,Unknown,Male,4
+32,2017,Unknown/Pending,60+,Male,5
+33,2017,Unknown/Pending,40-59,Male,8
+34,2018,Accident,Unknown,Male,1
+35,2018,Accident,40-59,Male,2
+36,2018,Accident,60+,Male,2
+37,2018,Cancer,40-59,Male,1
+38,2018,Cardiovascular Disease,60+,Female,1
+39,2018,Cardiovascular Disease,Unknown,Male,1
+40,2018,Cardiovascular Disease,60+,Male,5
+41,2018,Cardiovascular Disease,40-59,Male,7
+42,2018,Drug Toxicity,60+,Female,1
+43,2018,Drug Toxicity,40-59,Female,2
+44,2018,Drug Toxicity,20-39,Female,8
+45,2018,Drug Toxicity,60+,Male,1
+46,2018,Drug Toxicity,20-39,Male,8
+47,2018,Drug Toxicity,40-59,Male,13
+48,2018,Homicide,60+,Male,1
+49,2018,Homicide,20-39,Male,2
+50,2018,Homicide,40-59,Male,2
+51,2018,Other,40-59,Female,3
+52,2018,Other,40-59,Male,3
+53,2018,Other,60+,Male,4
+54,2018,Pneumonia,40-59,Female,1
+55,2018,Pneumonia,60+,Male,1
+56,2018,Pneumonia,40-59,Male,2
+57,2018,Suicide,20-39,Female,1
+58,2018,Suicide,20-39,Male,1
+59,2018,Suicide,60+,Male,2
+60,2018,Unknown/Pending,Unknown,Female,1
+61,2018,Unknown/Pending,40-59,Female,3
+62,2018,Unknown/Pending,20-39,Male,1
+63,2018,Unknown/Pending,Unknown,Male,3
+64,2018,Unknown/Pending,40-59,Male,5
+65,2018,Unknown/Pending,60+,Male,5
+66,2019,Accident,20-39,Female,2
+67,2019,Accident,40-59,Female,3
+68,2019,Accident,20-39,Male,1
+69,2019,Accident,60+,Male,1
+70,2019,Accident,40-59,Male,2
+71,2019,Cancer,20-39,Female,1
+72,2019,Cancer,40-59,Female,2
+73,2019,Cancer,40-59,Male,1
+74,2019,Cancer,60+,Male,5
+75,2019,Cardiovascular Disease,20-39,Female,1
+76,2019,Cardiovascular Disease,40-59,Female,1
+77,2019,Cardiovascular Disease,60+,Female,1
+78,2019,Cardiovascular Disease,40-59,Male,3
+79,2019,Cardiovascular Disease,60+,Male,9
+80,2019,Drug Toxicity,40-59,Female,4
+81,2019,Drug Toxicity,20-39,Female,9
+82,2019,Drug Toxicity,60+,Male,4
+83,2019,Drug Toxicity,20-39,Male,8
+84,2019,Drug Toxicity,40-59,Male,14
+85,2019,Homicide,20-39,Female,1
+86,2019,Homicide,40-59,Female,1
+87,2019,Homicide,60+,Male,2
+88,2019,Homicide,40-59,Male,3
+89,2019,Other,20-39,Female,1
+90,2019,Other,60+,Female,1
+91,2019,Other,<20,Female,1
+92,2019,Other,40-59,Female,2
+93,2019,Other,20-39,Male,1
+94,2019,Other,60+,Male,2
+95,2019,Other,40-59,Male,3
+96,2019,Pneumonia,40-59,Female,1
+97,2019,Pneumonia,60+,Female,1
+98,2019,Pneumonia,40-59,Male,3
+99,2019,Pneumonia,60+,Male,3
+100,2019,Suicide,20-39,Male,1
+101,2019,Suicide,40-59,Male,1
+102,2019,Unknown/Pending,40-59,Female,1
+103,2019,Unknown/Pending,<20,Male,1
+104,2019,Unknown/Pending,20-39,Male,3
+105,2019,Unknown/Pending,Unknown,Male,3
+106,2019,Unknown/Pending,40-59,Male,9
+107,2019,Unknown/Pending,60+,Male,9
+108,2019,Unknown/Pending,Unknown,Unknown,1
+109,2020,Accident,20-39,Male,1
+110,2020,COVID-19,40-59,Female,1
+111,2020,COVID-19,40-59,Male,1
+112,2020,COVID-19,60+,Male,1
+113,2020,COVID-19,Unknown,Male,1
+114,2020,Cancer,40-59,Female,1
+115,2020,Cancer,60+,Male,1
+116,2020,Cancer,Unknown,Male,1
+117,2020,Cardiovascular Disease,60+,Female,1
+118,2020,Cardiovascular Disease,40-59,Male,3
+119,2020,Cardiovascular Disease,60+,Male,10
+120,2020,Drug Toxicity,60+,Female,2
+121,2020,Drug Toxicity,20-39,Female,5
+122,2020,Drug Toxicity,40-59,Female,10
+123,2020,Drug Toxicity,<20,Male,1
+124,2020,Drug Toxicity,Unknown,Male,1
+125,2020,Drug Toxicity,60+,Male,9
+126,2020,Drug Toxicity,20-39,Male,21
+127,2020,Drug Toxicity,40-59,Male,26
+128,2020,Homicide,40-59,Female,1
+129,2020,Homicide,40-59,Male,1
+130,2020,Homicide,20-39,Male,2
+131,2020,Other,Unknown,Female,1
+132,2020,Other,40-59,Female,2
+133,2020,Other,20-39,Male,1
+134,2020,Other,40-59,Male,2
+135,2020,Other,60+,Male,3
+136,2020,Pneumonia,60+,Male,2
+137,2020,Suicide,40-59,Male,1
+138,2020,Suicide,20-39,Male,3
+139,2020,Unknown/Pending,20-39,Female,1
+140,2020,Unknown/Pending,60+,Female,3
+141,2020,Unknown/Pending,Unknown,Male,1
+142,2020,Unknown/Pending,20-39,Male,2
+143,2020,Unknown/Pending,40-59,Male,4
+144,2020,Unknown/Pending,60+,Male,16
+145,2021,Accident,20-39,Female,1
+146,2021,Accident,<20,Female,1
+147,2021,Accident,40-59,Female,3
+148,2021,Accident,40-59,Male,1
+149,2021,Accident,60+,Male,1
+150,2021,Accident,20-39,Male,2
+151,2021,COVID-19,60+,Female,1
+152,2021,COVID-19,60+,Male,2
+153,2021,Cancer,60+,Female,1
+154,2021,Cancer,40-59,Female,2
+155,2021,Cancer,40-59,Male,1
+156,2021,Cancer,60+,Male,3
+157,2021,Cardiovascular Disease,60+,Female,1
+158,2021,Cardiovascular Disease,40-59,Male,4
+159,2021,Cardiovascular Disease,60+,Male,10
+160,2021,Drug Toxicity,60+,Female,1
+161,2021,Drug Toxicity,<20,Female,1
+162,2021,Drug Toxicity,40-59,Female,9
+163,2021,Drug Toxicity,20-39,Female,16
+164,2021,Drug Toxicity,<20,Male,1
+165,2021,Drug Toxicity,Unknown,Male,1
+166,2021,Drug Toxicity,60+,Male,6
+167,2021,Drug Toxicity,20-39,Male,39
+168,2021,Drug Toxicity,40-59,Male,51
+169,2021,Drug Toxicity,20-39,Unknown,1
+170,2021,Drug Toxicity,40-59,Unknown,1
+171,2021,Homicide,40-59,Male,1
+172,2021,Other,40-59,Female,2
+173,2021,Other,60+,Male,4
+174,2021,Other,40-59,Male,6
+175,2021,Pneumonia,20-39,Male,1
+176,2021,Pneumonia,60+,Male,1
+177,2021,Suicide,40-59,Female,1
+178,2021,Suicide,20-39,Female,2
+179,2021,Suicide,20-39,Male,2
+180,2021,Suicide,40-59,Male,2
+181,2021,Unknown/Pending,20-39,Female,1
+182,2021,Unknown/Pending,40-59,Female,2
+183,2021,Unknown/Pending,Unknown,Female,2
+184,2021,Unknown/Pending,60+,Female,3
+185,2021,Unknown/Pending,Unknown,Male,3
+186,2021,Unknown/Pending,40-59,Male,4
+187,2021,Unknown/Pending,20-39,Male,5
+188,2021,Unknown/Pending,60+,Male,10
+189,2021,Unknown/Pending,60+,Unknown,1
+190,2021,Unknown/Pending,Unknown,Unknown,3
+191,2022,Accident,20-39,Female,1
+192,2022,Accident,20-39,Male,2
+193,2022,Accident,40-59,Male,3
+194,2022,COVID-19,40-59,Male,1
+195,2022,Cancer,60+,Female,2
+196,2022,Cancer,40-59,Male,1
+197,2022,Cancer,Unknown,Male,2
+198,2022,Cancer,60+,Male,5
+199,2022,Cardiovascular Disease,40-59,Female,1
+200,2022,Cardiovascular Disease,60+,Female,2
+201,2022,Cardiovascular Disease,20-39,Male,1
+202,2022,Cardiovascular Disease,Unknown,Male,1
+203,2022,Cardiovascular Disease,40-59,Male,5
+204,2022,Cardiovascular Disease,60+,Male,12
+205,2022,Drug Toxicity,<20,Female,1
+206,2022,Drug Toxicity,60+,Female,2
+207,2022,Drug Toxicity,40-59,Female,4
+208,2022,Drug Toxicity,20-39,Female,15
+209,2022,Drug Toxicity,<20,Male,1
+210,2022,Drug Toxicity,60+,Male,10
+211,2022,Drug Toxicity,20-39,Male,24
+212,2022,Drug Toxicity,40-59,Male,33
+213,2022,Homicide,40-59,Male,1
+214,2022,Other,40-59,Female,1
+215,2022,Other,60+,Female,1
+216,2022,Other,40-59,Male,2
+217,2022,Pneumonia,40-59,Male,1
+218,2022,Suicide,20-39,Female,1
+219,2022,Suicide,<20,Female,1
+220,2022,Suicide,20-39,Male,1
+221,2022,Suicide,40-59,Male,2
+222,2022,Suicide,60+,Male,2
+223,2022,Unknown/Pending,40-59,Female,1
+224,2022,Unknown/Pending,Unknown,Female,1
+225,2022,Unknown/Pending,60+,Female,5
+226,2022,Unknown/Pending,40-59,Male,8
+227,2022,Unknown/Pending,Unknown,Male,9
+228,2022,Unknown/Pending,60+,Male,19
+229,2022,Unknown/Pending,Unknown,Unknown,4
+230,2023,Accident,20-39,Male,1
+231,2023,Accident,40-59,Male,1
+232,2023,Cancer,40-59,Male,1
+233,2023,Cancer,Unknown,Male,1
+234,2023,Cancer,60+,Male,2
+235,2023,Cardiovascular Disease,40-59,Male,1
+236,2023,Drug Toxicity,40-59,Female,3
+237,2023,Drug Toxicity,60+,Male,4
+238,2023,Drug Toxicity,20-39,Male,13
+239,2023,Drug Toxicity,40-59,Male,16
+240,2023,Homicide,40-59,Male,1
+241,2023,Other,20-39,Female,1
+242,2023,Other,40-59,Male,1
+243,2023,Pneumonia,60+,Male,1
+244,2023,Suicide,20-39,Male,1
+245,2023,Suicide,40-59,Male,1
+246,2023,Unknown/Pending,20-39,Female,1
+247,2023,Unknown/Pending,Unknown,Female,1
+248,2023,Unknown/Pending,40-59,Female,3
+249,2023,Unknown/Pending,20-39,Male,2
+250,2023,Unknown/Pending,Unknown,Male,2
+251,2023,Unknown/Pending,40-59,Male,7
+252,2023,Unknown/Pending,60+,Male,13
+253,2023,Unknown/Pending,Unknown,Unknown,1

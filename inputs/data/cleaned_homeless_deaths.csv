@@ -1,0 +1,254 @@
+year_of_death,cause_of_death,count
+2017,Accident,2
+2017,Accident,3
+2017,Cancer,1
+2017,Cancer,2
+2017,Cancer,2
+2017,Cancer,4
+2017,Cardiovascular Disease,2
+2017,Cardiovascular Disease,1
+2017,Cardiovascular Disease,2
+2017,Cardiovascular Disease,4
+2017,Cardiovascular Disease,5
+2017,Drug Toxicity,2
+2017,Drug Toxicity,3
+2017,Drug Toxicity,1
+2017,Drug Toxicity,3
+2017,Drug Toxicity,10
+2017,Drug Toxicity,13
+2017,Homicide,1
+2017,Other,1
+2017,Other,1
+2017,Other,2
+2017,Other,2
+2017,Other,2
+2017,Pneumonia,3
+2017,Suicide,1
+2017,Suicide,2
+2017,Unknown/Pending,1
+2017,Unknown/Pending,1
+2017,Unknown/Pending,2
+2017,Unknown/Pending,4
+2017,Unknown/Pending,4
+2017,Unknown/Pending,5
+2017,Unknown/Pending,8
+2018,Accident,1
+2018,Accident,2
+2018,Accident,2
+2018,Cancer,1
+2018,Cardiovascular Disease,1
+2018,Cardiovascular Disease,1
+2018,Cardiovascular Disease,5
+2018,Cardiovascular Disease,7
+2018,Drug Toxicity,1
+2018,Drug Toxicity,2
+2018,Drug Toxicity,8
+2018,Drug Toxicity,1
+2018,Drug Toxicity,8
+2018,Drug Toxicity,13
+2018,Homicide,1
+2018,Homicide,2
+2018,Homicide,2
+2018,Other,3
+2018,Other,3
+2018,Other,4
+2018,Pneumonia,1
+2018,Pneumonia,1
+2018,Pneumonia,2
+2018,Suicide,1
+2018,Suicide,1
+2018,Suicide,2
+2018,Unknown/Pending,1
+2018,Unknown/Pending,3
+2018,Unknown/Pending,1
+2018,Unknown/Pending,3
+2018,Unknown/Pending,5
+2018,Unknown/Pending,5
+2019,Accident,2
+2019,Accident,3
+2019,Accident,1
+2019,Accident,1
+2019,Accident,2
+2019,Cancer,1
+2019,Cancer,2
+2019,Cancer,1
+2019,Cancer,5
+2019,Cardiovascular Disease,1
+2019,Cardiovascular Disease,1
+2019,Cardiovascular Disease,1
+2019,Cardiovascular Disease,3
+2019,Cardiovascular Disease,9
+2019,Drug Toxicity,4
+2019,Drug Toxicity,9
+2019,Drug Toxicity,4
+2019,Drug Toxicity,8
+2019,Drug Toxicity,14
+2019,Homicide,1
+2019,Homicide,1
+2019,Homicide,2
+2019,Homicide,3
+2019,Other,1
+2019,Other,1
+2019,Other,1
+2019,Other,2
+2019,Other,1
+2019,Other,2
+2019,Other,3
+2019,Pneumonia,1
+2019,Pneumonia,1
+2019,Pneumonia,3
+2019,Pneumonia,3
+2019,Suicide,1
+2019,Suicide,1
+2019,Unknown/Pending,1
+2019,Unknown/Pending,1
+2019,Unknown/Pending,3
+2019,Unknown/Pending,3
+2019,Unknown/Pending,9
+2019,Unknown/Pending,9
+2019,Unknown/Pending,1
+2020,Accident,1
+2020,COVID-19,1
+2020,COVID-19,1
+2020,COVID-19,1
+2020,COVID-19,1
+2020,Cancer,1
+2020,Cancer,1
+2020,Cancer,1
+2020,Cardiovascular Disease,1
+2020,Cardiovascular Disease,3
+2020,Cardiovascular Disease,10
+2020,Drug Toxicity,2
+2020,Drug Toxicity,5
+2020,Drug Toxicity,10
+2020,Drug Toxicity,1
+2020,Drug Toxicity,1
+2020,Drug Toxicity,9
+2020,Drug Toxicity,21
+2020,Drug Toxicity,26
+2020,Homicide,1
+2020,Homicide,1
+2020,Homicide,2
+2020,Other,1
+2020,Other,2
+2020,Other,1
+2020,Other,2
+2020,Other,3
+2020,Pneumonia,2
+2020,Suicide,1
+2020,Suicide,3
+2020,Unknown/Pending,1
+2020,Unknown/Pending,3
+2020,Unknown/Pending,1
+2020,Unknown/Pending,2
+2020,Unknown/Pending,4
+2020,Unknown/Pending,16
+2021,Accident,1
+2021,Accident,1
+2021,Accident,3
+2021,Accident,1
+2021,Accident,1
+2021,Accident,2
+2021,COVID-19,1
+2021,COVID-19,2
+2021,Cancer,1
+2021,Cancer,2
+2021,Cancer,1
+2021,Cancer,3
+2021,Cardiovascular Disease,1
+2021,Cardiovascular Disease,4
+2021,Cardiovascular Disease,10
+2021,Drug Toxicity,1
+2021,Drug Toxicity,1
+2021,Drug Toxicity,9
+2021,Drug Toxicity,16
+2021,Drug Toxicity,1
+2021,Drug Toxicity,1
+2021,Drug Toxicity,6
+2021,Drug Toxicity,39
+2021,Drug Toxicity,51
+2021,Drug Toxicity,1
+2021,Drug Toxicity,1
+2021,Homicide,1
+2021,Other,2
+2021,Other,4
+2021,Other,6
+2021,Pneumonia,1
+2021,Pneumonia,1
+2021,Suicide,1
+2021,Suicide,2
+2021,Suicide,2
+2021,Suicide,2
+2021,Unknown/Pending,1
+2021,Unknown/Pending,2
+2021,Unknown/Pending,2
+2021,Unknown/Pending,3
+2021,Unknown/Pending,3
+2021,Unknown/Pending,4
+2021,Unknown/Pending,5
+2021,Unknown/Pending,10
+2021,Unknown/Pending,1
+2021,Unknown/Pending,3
+2022,Accident,1
+2022,Accident,2
+2022,Accident,3
+2022,COVID-19,1
+2022,Cancer,2
+2022,Cancer,1
+2022,Cancer,2
+2022,Cancer,5
+2022,Cardiovascular Disease,1
+2022,Cardiovascular Disease,2
+2022,Cardiovascular Disease,1
+2022,Cardiovascular Disease,1
+2022,Cardiovascular Disease,5
+2022,Cardiovascular Disease,12
+2022,Drug Toxicity,1
+2022,Drug Toxicity,2
+2022,Drug Toxicity,4
+2022,Drug Toxicity,15
+2022,Drug Toxicity,1
+2022,Drug Toxicity,10
+2022,Drug Toxicity,24
+2022,Drug Toxicity,33
+2022,Homicide,1
+2022,Other,1
+2022,Other,1
+2022,Other,2
+2022,Pneumonia,1
+2022,Suicide,1
+2022,Suicide,1
+2022,Suicide,1
+2022,Suicide,2
+2022,Suicide,2
+2022,Unknown/Pending,1
+2022,Unknown/Pending,1
+2022,Unknown/Pending,5
+2022,Unknown/Pending,8
+2022,Unknown/Pending,9
+2022,Unknown/Pending,19
+2022,Unknown/Pending,4
+2023,Accident,1
+2023,Accident,1
+2023,Cancer,1
+2023,Cancer,1
+2023,Cancer,2
+2023,Cardiovascular Disease,1
+2023,Drug Toxicity,3
+2023,Drug Toxicity,4
+2023,Drug Toxicity,13
+2023,Drug Toxicity,16
+2023,Homicide,1
+2023,Other,1
+2023,Other,1
+2023,Pneumonia,1
+2023,Suicide,1
+2023,Suicide,1
+2023,Unknown/Pending,1
+2023,Unknown/Pending,1
+2023,Unknown/Pending,3
+2023,Unknown/Pending,2
+2023,Unknown/Pending,2
+2023,Unknown/Pending,7
+2023,Unknown/Pending,13
+2023,Unknown/Pending,1

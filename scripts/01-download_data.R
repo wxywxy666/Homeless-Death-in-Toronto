@@ -1,23 +1,33 @@
-library(knitr)
-library(janitor)
-library(lubridate)
 library(opendatatoronto)
+library(janitor)
 library(tidyverse)
 
-#### Acquire ####
-toronto_shelters <-
-  # Each package is associated with a unique id  found in the "For 
-  # Developers" tab of the relevant page from Open Data Toronto
-  # https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/
-  list_package_resources("21c83b32-d5a8-4106-a54f-010dbe49f6f2") |>
-  # Within that package, we are interested in the 2021 dataset
+homeless_deaths <-
+  list_package_resources("a7ae08f3-c512-4a88-bb3c-ab40eca50c5e") |>
   filter(name == 
-           "daily-shelter-overnight-service-occupancy-capacity-2021.csv") |>
-  # Having reduced the dataset to one row we can get the resource
+           "Homeless deaths by cause.csv") |>
   get_resource()
 
+write_csv(
+  x = homeless_deaths,
+  file = "inputs/data/unedited_homeless_deaths.csv"
+)
+
+cleaned_homeless_deaths <-
+  clean_names(homeless_deaths) |>
+  select(year_of_death, cause_of_death, count)
 
 write_csv(
-  x = toronto_shelters,
-  file = "unedited_data.csv"
+  x = cleaned_homeless_deaths,
+  file = "inputs/data/cleaned_homeless_deaths.csv"
 )
+
+
+cleaned_homeless_deaths |>
+  arrange(cause_of_death) |> 
+  summarise(count = sum(count),
+            .by = cause_of_death) |>
+  kable(
+    col.names = c("Cause_of_death", "Average daily number of occupied beds"),
+    digits = 1
+  )

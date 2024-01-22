@@ -1,31 +1,31 @@
-install.packages("knitr")
-install.packages("janitor")
-install.packages("lubridate")
-install.packages("opendatatoronto")
-install.packages("tidyverse")
-library(knitr)
 library(janitor)
-library(lubridate)
-library(opendatatoronto)
 library(tidyverse)
 
-#### Simulate ####
-set.seed(853)
+# Set a seed for reproducibility
+set.seed(888)
 
-simulated_occupancy_data <-
-  tibble(
-    date = rep(x = as.Date("2021-01-01") + c(0:364), times = 3),
-    # Based on Eddelbuettel: https://stackoverflow.com/a/21502386
-    shelter = c(
-      rep(x = "Shelter 1", times = 365),
-      rep(x = "Shelter 2", times = 365),
-      rep(x = "Shelter 3", times = 365)
-    ),
-    number_occupied =
-      rpois(
-        n = 365 * 3,
-        lambda = 30
-      ) # Draw 1,095 times from the Poisson distribution
-  )
+# Number of observations
+num_observations <- 500
 
-head(simulated_occupancy_data)
+# Simulate the "year" variable
+years <- sample(2017:2023, num_observations, replace = TRUE)
+
+# Simulate the "cause of death" variable
+causes <- sample(paste0("cause", 1:5), num_observations, replace = TRUE)
+
+# Simulate the "count" variable
+counts <- sample(1:10, num_observations, replace = TRUE)
+
+# Create a data frame
+simulated_data <- data.frame(
+  year = years,
+  cause_of_death = causes,
+  count = counts
+)
+
+# Sort the simulated dataset by 'year'
+simulated_data <- simulated_data[order(simulated_data$year), ]
+
+# View the first and last few rows of the simulated dataset
+head(simulated_data)
+tail(simulated_data)
