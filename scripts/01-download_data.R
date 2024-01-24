@@ -37,7 +37,7 @@ cleaned_homeless_deaths <-
     arrange(cause_of_death) |> 
     summarise(count = sum(count),
               .by = cause_of_death)
-# Use kable to present
+# Use kable to present the data
 kable(
   cleaned_homeless_deaths,
   caption = "Count of death arranged by cause",
