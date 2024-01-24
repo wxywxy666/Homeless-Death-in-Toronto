@@ -1,0 +1,152 @@
+---
+title: "Investigating the Cause of Homeless People’s Deaths in Toronto"
+author: 
+  - Xiyou Wang
+date: "`r format(Sys.time(), '%d %B %Y')`"
+abstract: "The death of homeless people in Toronto can be a concerning issue considering that they are already vulnerable because of their homelessness and thus exposed to very many dangers. Many factors contribute to the death of the homeless people in Toronto. This report aims to investigate the causes of death of homeless people in Toronto from 2017 to 2023. The study shows that drugs and toxicity are the leading causes of death among homeless people in Toronto. Covid-19 also had severe effects on the deaths of the homeless in Toronto. This finding suggests that drugs and toxicity should be handled with the highest swiftness in dealing with the deaths of homeless people in Toronto. The long-term effects of the pandemic on the life of the homeless in Toronto should also be investigated as the relevant stakeholders including the government take the appropriate measures to protect the lives of these vulnerable individuals."
+output:
+  bookdown::pdf_document2
+format: pdf
+toc: true
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Set up libraries
+library(tidyverse)
+library(janitor)
+```
+
+\newpage
+
+# Introduction
+
+As one of the busiest and most modern cities in Canada, Toronto constantly hosts a large number of homeless people. As one of the cities in Canada with high standards, Toronto faces a growing homeless population. Reasons for homelessness are varied and can be a web of issues that include joblessness, mental health problems, addiction; family splits as well shortage of affordable housing. Homeless individuals have one of the greatest levels of vulnerability since they do not have any form of proper sheltering for their protection. Some of the most common causes of death among the homeless have been determined to be drug addiction. Despite their homeless conditions the death of the homeless still contributes excruciating pain to the families and a loss to the country [@cite10]. 
+
+Toronto Public Health published data that showed that drugs and toxicity which often come from the unregulated supply in the city are two of the leading causes of deaths of the homeless in Toronto [@cite13]. With the help of statistical data analysis, it can offer insights on the ways to reduce this type of death of these vulnerable members of the Toronto society. This report investigates the homeless deaths in Toronto from 2017 to 2023. Then I discussed the possible implications of these visualizations. Table 1 shows that there were different causes of death of the homeless between 2017 and 2023. In Figure 1, a comparative analysis of the causes of death for each age group was explored. In Figure 2, I discussed about the distribution of death from males and females. About the The result from the datasets indicates that there were different causes of death including suicide and undetermined causes. However, as the Figure 3 shows, drug and toxicity was the leading cause of the deaths of homeless individuals in Toronto. More implications and further discussions on this result are presented in Discussion Section.
+
+\newpage
+
+
+# Data
+## Causes of Death among Homeless People in Toronto
+To investigate the cause of death of homeless individuals in Toronto, I obtained the dataset from the Toronto Open Data Portal [@cite6]. Provided by the Toronto Public Health, this dataset includes all causes of death of the homeless which occurred in Toronto between 2017 and 2023. For ethical reasons and the protection of the parties involved in the deaths, none of their personal information was disclosed. 
+
+This dataset contains 253 observations of death, noticing that one observation could contain more than one death, 6 variables regarding id, year of death, cause of death, gender, age group, and count. This report focuses on 5 of these variables except id. By using R [@cite1], and R packages "janitor" [@cite2], "tidyverse" [@cite3], "knitr" [@cite4], and "kableExtra" [@cite5], an extract of the cleaned dataset is shown below.
+
+
+
+
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Set up libraries
+library(knitr)
+library(kableExtra)
+
+
+# Load cause of homeless' death data and clean
+cleaned_homeless_deaths <- read_csv(here::here("inputs/data/cleaned_homeless_deaths.csv")) %>%
+  arrange(cause_of_death) %>%
+  summarise(count = sum(count),
+            .by = cause_of_death)
+```
+
+```{r cause, echo=FALSE, message=FALSE, fig.align='center'}
+# Create a table using kable
+kable(
+  cleaned_homeless_deaths,
+  caption = "Count of Death Arranged by Cause",
+  col.names = c("Cause_of_death", "Count of Death"),
+  format = "markdown",
+  align = c("l", "r"))
+
+```
+
+
+Table 1 shows the total count of each cause of death. Variable "Cause_of_death" indicates that different causes of homeless people's death, including "Accident", "Cancer" ,etc. Variable "Count of Death" indicates the total count of death under this cause.
+
+First, I want to conduct research on the causes of death, so I will not discuss variables such as age and year of death for the time being. Using this table, I can find that the number of deaths due to drug toxicity is significantly higher than other causes. In addition, as of today, there are still 208 cases of unknown death. It is not easy to comprehensively relieve these homeless people. Steer notes that if a death is considered “natural,” and the coroner is not involved [@cite14].
+
+\newpage
+
+## The Age Groups of Homeless People Who Died in Toronto
+
+```{r echo=FALSE, fig.cap="Comparing the count of death by different age groups from 2017 to 2023", fig.align='center'}
+# Set up libraries
+library(ggplot2)
+
+# Load dataset
+data <- read_csv(here::here("inputs/data/unedited_homeless_deaths.csv"), show_col_types = FALSE)
+
+# Create a bar plot using ggplot2
+ggplot(data, aes(x = Age_group, y = Count)) +
+  geom_bar(stat = "identity", fill = "lightblue") +
+  labs(title = "Count of Deaths by Age Group",
+       x = "Age Group",
+       y = "Count") +
+  theme_minimal()
+```
+
+Figure 1 shows the number of homeless people dying by age from 2017 to 2023. We can find that most of the people who died are concentrated in the 40-59 range, the second largest age group is 60+, and only a small number of young people under the age of 20 died. But this is not something to be thankful for, every death is a tragedy, especially for those young children. It's really, really unfair when someone dies an avoidable death as a teenager [@cite11]. It can be seen that survival will be particularly difficult for middle-aged and elderly homeless people. Considering their declining physical capabilities and Toronto's cold winters [@cite12], the government should give them more help.
+
+
+\newpage
+
+## The Gender of Homeless People Who Died in Toronto
+
+```{r echo=FALSE, fig.cap="Comparing the count of death by different genders from 2017 to 2023", fig.align='center'}
+# Sum the total number of each gender
+total <- data %>%
+  group_by(Gender) %>%
+  summarise(count = sum(Count))
+
+# Create a bar plot using ggplot2
+ggplot(total, aes(x = Gender, y = count, fill = Gender)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = count)) +
+  labs(title = "Total Number of Deaths by Gender",
+       x = "Gender",
+       y = "Count") +
+  theme_minimal()
+```
+
+Figure 2 shows the difference in the number of deaths by gender, as well as the specific number of deaths among men and women. From this we can conclude that female deaths account for approximately 21.707%, but this does not mean that the health status of female homeless people is worse. Good, because the total number of homeless men is greater than that of women, accounting for about 63% [@cite7]of the total.
+
+
+\newpage
+## Cause of Death Distributed by Year
+Before conducting further research, I have been interested in the impact of covid on the homeless. I previously thought that a large number of homeless people would die from covid, but Table 1 already shows the death toll. , which is far lower than my guess. I hope to have a deeper understanding of this phenomenon.
+```{r echo=FALSE, message=FALSE, warning=FALSE, fig.cap="Comparing the count of death by different years from 2017 to 2023", fig.align='center'}
+# Sum the tatal number for each year
+total <- data %>%
+  group_by(Year.of.death) %>%
+  summarise(count = sum(Count))
+
+# Create a bar plot using ggplot2
+ggplot(data, aes(x = Year.of.death, y = Count, fill = Cause_of_death)) +
+  geom_bar(stat = "identity") +
+  
+  labs(title = "Cause of Death Distribution by Year",
+       x = "Year",
+       y = "Count") +
+  theme_minimal()
+```
+
+Figure 3 shows the annual death toll statistics from 2017 to 2013. It can be found that the overall number is increasing, reaching a peak in 2021, and then declining. In the covid epidemic, direct deaths from covid only exist from 2020 to 2022, and the number is far less than I guessed. But in fact, the impact of the epidemic is not limited to this. First of all, being infected with covid does not necessarily lead to death, but the subsequent sequelae, such as increasing the probability of cardiovascular disease and weakening lung function, will indirectly affect the health of homeless people, and often they do not have the conditions to go Get some effective diagnosis and treatment. In addition, under the conditions of the epidemic, the increase in the number of homeless people has also led to a shortage of social facilities, which has also made the situation of homeless people even worse [@cite8].
+
+I have also observed that the main reason for the increase in the death toll is the sharp increase in deaths and injuries caused by drug toxicity. A large portion of drug toxicity deaths stem from the toxic, unregulated drug supply. The use of highly potent opioids combined with unexpected substances is significantly increasing the risk of overdose in Toronto," the city said in a Sept. 28 news release. These deaths are an example of the negative health impacts of the ongoing drug toxicity crisis." Dr. Eileen de Villa, Toronto's medical officer of health, pointed to "notable increases" in the number of unhoused people dying in the city during the pandemic [@cite9].
+
+
+# Discussion
+The analyzed data on death causes among homeless people in Toronto show obvious patterns and trends. Although the exact numbers and counts are not given, the percentages and distributions help in generating an understanding of what challenges homeless folks face today with possible impacts on public health policy. An examination of the results in Figure 3 shows that the drug and toxicity were the leading cause of death of the homeless in all the years. Cardiovascular death is the main cause of mortality among homeless people, accounting for a significant proportion of overall deaths. It is, therefore, important to tackle these underlying health concerns that affect the homeless population for enhanced general well-being. Among the most notable outcomes is that deaths caused by drug toxicity are widespread. This category is a particularly significant contributor to homeless mortality, highlighting problems with substance abuse within this group. These implications far exceed just health concerns because addiction, mental health, and the availability of rehab are also involved. This result alerts us about the safety and security of homeless people, they are at risk out there in public places. Policymakers and social services should address these safety concerns so that a healthy environment is created for the homeless to ensure their security. A significant decrease in mortality rates could be achieved by initiatives related to preventive care, health screenings, and substance abuse treatment. Cooperation of health care providers and shelters will enable the homeless to obtain appropriate, timely medical care for chronic disorders.   
+
+The findings showcase the complicated connection between housing stability and health outcomes. Some of the difficulties associated with homelessness feed into cardiovascular diseases, drug toxicity, and other health problems. Affordable housing solutions and housing supportive programs should therefore be financed to directly address the causes of these health inequalities. The high prevalence of drug intoxication underscores the urgent need for mental health and substance abuse support services. Customized interventions such as counseling, addiction treatment, and harm reduction strategies are a cornerstone to reducing mortality for homeless who abuse substances. Homicide as a cause of death requires attention to safety measures and community integration. Since policies encourage secure environments, action against violence and effective community policing can ensure a safer environment for the homeless. Furthermore, initiatives aimed at introducing homeless people to the community through job and social services can improve their quality of life. Measures should be taken to reduce the rates of drug abuse among the homeless in Toronto. The government and other NGOs could come up with programs that help not only in housing them and increasing security to reduce the homicidal cases among them to also to rehabilitate them, from drugs and toxic substances WHO and the Public Health of Toronto must further study the issues. After the impact, how to re-improve social security measures is also an issue worthy of serious consideration.
+
+
+\newpage
+
+
+# References

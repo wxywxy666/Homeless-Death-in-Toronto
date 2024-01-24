@@ -1,6 +1,8 @@
 library(opendatatoronto)
 library(janitor)
 library(tidyverse)
+library(knitr)
+library(kableExtra)
 
 homeless_deaths <-
   list_package_resources("a7ae08f3-c512-4a88-bb3c-ab40eca50c5e") |>
@@ -22,12 +24,18 @@ write_csv(
   file = "inputs/data/cleaned_homeless_deaths.csv"
 )
 
+cleaned_homeless_deaths <-
+  read_csv("inputs/data/cleaned_homeless_deaths.csv")
 
-cleaned_homeless_deaths |>
-  arrange(cause_of_death) |> 
-  summarise(count = sum(count),
-            .by = cause_of_death) |>
-  kable(
-    col.names = c("Cause_of_death", "Average daily number of occupied beds"),
-    digits = 1
-  )
+cleaned_homeless_deaths <-
+  cleaned_homeless_deaths |>
+    arrange(cause_of_death) |> 
+    summarise(count = sum(count),
+              .by = cause_of_death)
+
+kable(
+  cleaned_homeless_deaths,
+  caption = "Count of death arranged by cause",
+  col.names = c("Cause_of_death", "Count of Death"),
+  format = "markdown",
+  align = c("l", "r"))
