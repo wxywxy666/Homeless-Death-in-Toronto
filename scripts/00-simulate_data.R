@@ -23,7 +23,7 @@ simulated_data <- data.frame(
   count = counts
 )
 
-# Sort the simulated dataset by 'year'
+# Sort the simulated dataset by "year"
 simulated_data <- simulated_data[order(simulated_data$year), ]
 
 # View the first and last few rows of the simulated dataset
