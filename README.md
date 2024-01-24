@@ -10,4 +10,4 @@ The script folder contains the R files that simulate data and import data from t
 
 The inputs folder contains both raw and cleaned data
 
-The outputs folder mainly contains paper in two formats: pdf and rmd, and references
+The outputs folder mainly contains paper in two formats: pdf and Rmd, and references
