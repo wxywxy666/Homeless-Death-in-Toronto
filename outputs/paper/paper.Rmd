@@ -3,6 +3,7 @@ title: "Investigating the Cause of Homeless People’s Deaths in Toronto"
 author: 
   - Xiyou Wang
 date: "`r format(Sys.time(), '%d %B %Y')`"
+thanks: "Code and data are available at: https://github.com/wxywxy666/STA302Paper1"
 abstract: "The death of homeless people in Toronto can be a concerning issue considering that they are already vulnerable because of their homelessness and thus exposed to very many dangers. Many factors contribute to the death of the homeless people in Toronto. This report aims to investigate the causes of death of homeless people in Toronto from 2017 to 2023. The study shows that drugs and toxicity are the leading causes of death among homeless people in Toronto. Covid-19 also had severe effects on the deaths of the homeless in Toronto. This finding suggests that drugs and toxicity should be handled with the highest swiftness in dealing with the deaths of homeless people in Toronto. The long-term effects of the pandemic on the life of the homeless in Toronto should also be investigated as the relevant stakeholders including the government take the appropriate measures to protect the lives of these vulnerable individuals."
 output:
   bookdown::pdf_document2
